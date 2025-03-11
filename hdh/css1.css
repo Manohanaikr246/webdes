@@ -1,0 +1,10 @@
+.pClass {
+    font-size: 18px;
+    color: white;
+    background-color: darkblue;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: solid 2px plum;
+}
+

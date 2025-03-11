@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- lang, charset, and name are called attributes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Page</title>
+    <script src="form.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1>Form</h1>
+        <form name="forName" onsubmit="return validateForm()">
+            <div>
+                <label for="nameID">Name</label> <br />
+                <span>*</span>
+                <span>:</span>
+                <input type="text" id="nameID" name="nameName" />
+            </div>
+
+            <div>
+                <label for="email-id">Mail-id</label> <br />
+                <span class="redColor">*</span>
+                <span>:</span>
+                <input type="email" id="email-id" name="nameName" />
+            </div>
+
+            <div>
+                <label for="date">Date</label> <br />
+                <span>*</span>
+                <span>:</span>
+                <input type="date" id="date" />
+            </div>
+            <!-- <div>
+                <label>Gender * :</label>
+                <input type="radio" name="gender" value="male" /> Male
+                <input type="radio" name="gender" value="female" /> Female
+                <input type="radio" name="gender" value="other" /> Other <br /><br />
+            </div> -->
+            <div>
+                <span>Select gender: </span>
+                <label for="male-id">male</label>
+                <input type="radio" id="male-id" name="gender">
+                <label for="female-id"> female</label>
+                <input type="radio" id="female-id" name="gender">
+            </div>
+            <div>
+                <label for="password">Password * :</label>
+                <input type="password" id="password" name="password" />
+                <br /><br />
+
+                <!-- Confirm Password -->
+                <label for="confirm-password">Confirm Password * :</label>
+                <input type="password" id="confirm-password" name="confirm-password" />
+                <br /><br />
+            </div>
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number * :</label>
+            <input type="tel" id="phone" name="phone">
+            <br><br>
+            <div>
+                <button type="submit" value="submit">submit</button>
+                <button type="reset" value="clear" onclick="resetForm5">clear</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
